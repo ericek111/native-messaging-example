@@ -1,0 +1,30 @@
+{
+  "name": "Native Messaging - Browser Extension",
+  "version": "1.0.0",
+  "description": "Native Messaging API example.",
+
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "permissions": [
+    "nativeMessaging",
+    "activeTab",
+    "*://localhost/*"
+  ],
+
+  "content_scripts": [
+    {
+      "js": [ "tab.js" ],
+      "run_at": "document_idle",
+      "matches": [
+        "*://localhost/*"
+      ]
+    }
+  ],
+
+  "manifest_version": 2
+}

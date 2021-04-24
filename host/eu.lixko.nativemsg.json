@@ -1,0 +1,9 @@
+{
+  "name": "eu.lixko.nativemsg",
+  "description": "Native Messaging API Host Implementation",
+  "path": "/home/erik/Documents/nativemsg/host/handler.js",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://belkaeholgacacoedbfbnoacgckbhmkh/"
+  ]
+}
